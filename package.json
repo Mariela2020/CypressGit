@@ -1,0 +1,16 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": ".\\node_modules\\.bin\\cypress run --config pageLoadTimeout=100000",
+    "runtests": "npm run test --",
+    "cypress:open":"cypress open"
+  },
+  "author": "Mariela",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^6.1.0"
+  }
+}
