@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-12-28T18:34:55.705Z",
-    "end": "2020-12-28T18:36:04.904Z",
-    "duration": 69199,
+    "start": "2020-12-29T17:17:08.862Z",
+    "end": "2020-12-29T17:17:27.461Z",
+    "duration": 18599,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b054a594-80d6-432d-82da-018686420076",
+      "uuid": "469e1120-06a5-426c-ace2-c93ff03aea2d",
       "title": "",
       "fullFile": "cypress\\integration\\test_planes.js",
       "file": "cypress\\integration\\test_planes.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "76ec4a5c-f60f-4dea-8c3b-327fbc37c113",
+          "uuid": "90c33bef-de04-4a58-8930-41d912780439",
           "title": "Tests Suites",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Flujo Planes",
               "fullTitle": "Tests Suites Flujo Planes",
               "timedOut": null,
-              "duration": 66402,
+              "duration": 16039,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('https://ww2.toctoc.com/gestioncorredor/');\ncy.title().should('eq', 'TOCTOC.com - Gestión corredor - Planes de publicación');\ncy.get('.gCdesktop > :nth-child(2) > a').click();\ncy.get('.acelera > .col-12 > .plan-btn > .btn').click({\n  force: true\n});\ncy.get('#nombreUser').type('Mariela Hurtado');\ncy.get('#telefonoUser').type('+56993947209');\ncy.get('#emailUser').type('hurtadomariela2@gmail.com');\ncy.get('#password').type('#password');\ncy.get('#nextStep').click();\ncy.get('#razonSocial').type('Prueba de Flujo QA');\ncy.get('#rutFacturacion').clear().type('267008469');\ncy.get('#nombreFantasia').type('Tuinmueble.com');\ncy.get('#giro').type('Giro 123');\ncy.get('#telefono').type('+56993947209');\ncy.get('#nextStep').click();\ncy.get('#representanteLegal').type('Mariela Hurtado');\ncy.get('#rutRepresentanteLegal').clear().type('267008469');\ncy.get('#emailFacturacion').type('mariela.hurtado@toctoc.com');\ncy.get('#direccionFacturacion').type('Manuel Rodriguez');\ncy.get('#region').select('13');\ncy.get('#comuna').select('339');\ncy.get('#aceptaTerminos').click();\ncy.get('.btn-danger').click();\ncy.wait(3000);\ncy.get('#verDetalle').click();\ncy.get('div.pago__Productos__Extra__detalle.contenedor-padre:nth-child(4) section.flujo__pago div.container.detallePago div.row.detalle__datos:nth-child(5) div.btn-next.col-12 a.btn.btn-danger.button.btn-block > span:nth-child(1)').click();\ncy.get('.modal-footer > .btn').click();",
               "err": {},
-              "uuid": "983e50f6-0b2f-4cf1-a0ad-e8c6876fcd39",
-              "parentUUID": "76ec4a5c-f60f-4dea-8c3b-327fbc37c113",
+              "uuid": "d3d02690-0c06-411d-9970-3cc68821cf46",
+              "parentUUID": "90c33bef-de04-4a58-8930-41d912780439",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "983e50f6-0b2f-4cf1-a0ad-e8c6876fcd39"
+            "d3d02690-0c06-411d-9970-3cc68821cf46"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 66402,
+          "duration": 16039,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
