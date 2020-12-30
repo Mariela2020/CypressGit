@@ -1,0 +1,115 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-12-30T14:42:24.267Z",
+    "end": "2020-12-30T14:43:05.161Z",
+    "duration": 40894,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8c3d7f25-d445-4236-bda0-10425781ea2c",
+      "title": "",
+      "fullFile": "cypress\\integration\\test_planes.js",
+      "file": "cypress\\integration\\test_planes.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0b6d1791-f8ca-46d3-a35e-4048bb555fd1",
+          "title": "Tests Suites",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Flujo Planes",
+              "fullTitle": "Tests Suites Flujo Planes",
+              "timedOut": null,
+              "duration": 38033,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://ww2.toctoc.com/gestioncorredor/');\ncy.title().should('eq', 'TOCTOC.com - Gestión corredor - Planes de publicación');\ncy.get('.gCdesktop > :nth-child(2) > a').click();\ncy.get('.acelera > .col-12 > .plan-btn > .btn').click({\n  force: true\n});\ncy.get('#nombreUser').type('Mariela Hurtado');\ncy.get('#telefonoUser').type('+56993947209');\ncy.get('#emailUser').type('hurtadomariela2@gmail.com');\ncy.get('#password').type('#password');\ncy.get('#nextStep').click();\ncy.get('#razonSocial').type('Prueba de Flujo QA');\ncy.get('#rutFacturacion').clear().type('267008469');\ncy.get('#nombreFantasia').type('Tuinmueble.com');\ncy.get('#giro').type('Giro 123');\ncy.get('#telefono').type('+56993947209'); // cy.get('#nextStep').click()\ncy.get('#representanteLegal').type('Mariela Hurtado');\ncy.get('#rutRepresentanteLegal').clear().type('267008469');\ncy.get('#emailFacturacion').type('mariela.hurtado@toctoc.com');\ncy.get('#direccionFacturacion').type('Manuel Rodriguez');\ncy.get('#region').select('13');\ncy.get('#comuna').select('339');\ncy.get('#aceptaTerminos').click();\ncy.get('.btn-danger').click();\ncy.wait(3000);\ncy.get('#verDetalle').click();\ncy.get('div.pago__Productos__Extra__detalle.contenedor-padre:nth-child(4) section.flujo__pago div.container.detallePago div.row.detalle__datos:nth-child(5) div.btn-next.col-12 a.btn.btn-danger.button.btn-block > span:nth-child(1)').click();\ncy.get('.modal-footer > .btn').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `#representanteLegal`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `#representanteLegal`, but never found it.\n    at Context.eval (https://ww2.toctoc.com/__cypress/tests?p=cypress\\integration\\test_planes.js:118:8)",
+                "diff": null
+              },
+              "uuid": "24d6a521-2277-42e2-b447-d5c8825d4f16",
+              "parentUUID": "0b6d1791-f8ca-46d3-a35e-4048bb555fd1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "24d6a521-2277-42e2-b447-d5c8825d4f16"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 38033,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporteOptions": {
+          "reportDir": "cypress/reports/mocha",
+          "reportFilename": "report",
+          "quite": true,
+          "overwrite": false,
+          "html": true,
+          "json": true,
+          "charts": true
+        }
+      },
+      "version": "5.1.0"
+    }
+  }
+}
