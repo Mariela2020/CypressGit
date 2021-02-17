@@ -1,84 +1,23 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 1,
+    "suites": 0,
+    "tests": 0,
     "passes": 0,
     "pending": 0,
-    "failures": 1,
-    "start": "2021-02-17T15:59:51.601Z",
-    "end": "2021-02-17T16:01:05.283Z",
-    "duration": 73682,
-    "testsRegistered": 1,
-    "passPercent": 0,
-    "pendingPercent": 0,
+    "failures": 0,
+    "start": "2021-02-17T18:23:33.741Z",
+    "end": "2021-02-17T18:23:33.743Z",
+    "duration": 2,
+    "testsRegistered": 0,
+    "passPercent": null,
+    "pendingPercent": null,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false
   },
   "results": [
-    {
-      "uuid": "1b6d65e8-4824-477b-971d-69165c173f5e",
-      "title": "",
-      "fullFile": "cypress\\integration\\test_producto.js",
-      "file": "cypress\\integration\\test_producto.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "73ae53a8-00c5-4cae-986f-e9bab10fa0ec",
-          "title": "Tests Producto Marketing",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Flujo Producto Marketing",
-              "fullTitle": "Tests Producto Marketing Flujo Producto Marketing",
-              "timedOut": null,
-              "duration": 71190,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit('https://ww2.toctoc.com/gestioncorredor/');\ncy.title().should('eq', 'TOCTOC.com - Gestión corredor - Planes de publicación'); //cy.get('.menu__section--profile > a').click()\n//cy.get('#email').type('hurtadomariela2@gmail.com')\n//cy.get('#password').type('prueba')\n//cy.get('.btn').click()\ncy.get(\"div.menuPrincipal:nth-child(2) div.menuGestionCorredores:nth-child(3) div.container div.menu__interno.d-flex.flex-row ul.gCdesktop.menu__section--list.d-flex.flex-row li.item:nth-child(3) > a:nth-child(1)\").click();\ncy.get('.gCdesktop > :nth-child(3) > a').click();\ncy.get(':nth-child(1) > .item_superior > .desktop').click();\ncy.get('.modal-footer > :nth-child(2) > .btn').click();\ncy.get('.menu__section--profile > a').click();\ncy.get('#email').type('hurtadomariela2@gmail.com');\ncy.get('#password').type('prueba');\ncy.get('.btn').click();\ncy.get('#razonSocial').clear().type('Prueba de Flujo QA');\ncy.get('#rutFacturacion').clear().type('267008469');\ncy.get('#nombreFantasia').clear().type('Test de Prueba');\ncy.get('#giro').clear().type('Giro3');\ncy.get('#telefono').clear().type('+56993947209');\ncy.get('#direccion').clear().type('Bella Vista');\ncy.get('#nextStep').click();",
-              "err": {
-                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
-                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://ww2.toctoc.com/__cypress/runner/cypress_runner.js:156882:13)\n    at https://ww2.toctoc.com/__cypress/runner/cypress_runner.js:157147:14\n    at tryCatcher (https://ww2.toctoc.com/__cypress/runner/cypress_runner.js:10584:23)\n    at https://ww2.toctoc.com/__cypress/runner/cypress_runner.js:5706:41\n    at tryCatcher (https://ww2.toctoc.com/__cypress/runner/cypress_runner.js:10584:23)\n    at Promise._settlePromiseFromHandler (https://ww2.toctoc.com/__cypress/runner/cypress_runner.js:8519:31)\n    at Promise._settlePromise (https://ww2.toctoc.com/__cypress/runner/cypress_runner.js:8576:18)\n    at Promise._settlePromise0 (https://ww2.toctoc.com/__cypress/runner/cypress_runner.js:8621:10)\n    at Promise._settlePromises (https://ww2.toctoc.com/__cypress/runner/cypress_runner.js:8697:18)\n    at _drainQueueStep (https://ww2.toctoc.com/__cypress/runner/cypress_runner.js:5291:12)\n    at _drainQueue (https://ww2.toctoc.com/__cypress/runner/cypress_runner.js:5284:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://ww2.toctoc.com/__cypress/runner/cypress_runner.js:5300:5)\n    at Async.drainQueues (https://ww2.toctoc.com/__cypress/runner/cypress_runner.js:5170:14)\nFrom Your Spec Code:\n    at Context.eval (https://ww2.toctoc.com/__cypress/tests?p=cypress\\integration\\test_producto.js:111:43)",
-                "diff": null
-              },
-              "uuid": "7e451e4b-eefe-4186-bc35-4a9c0e88d2cb",
-              "parentUUID": "73ae53a8-00c5-4cae-986f-e9bab10fa0ec",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [],
-          "failures": [
-            "7e451e4b-eefe-4186-bc35-4a9c0e88d2cb"
-          ],
-          "pending": [],
-          "skipped": [],
-          "duration": 71190,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    }
+    false
   ],
   "meta": {
     "mocha": {
