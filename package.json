@@ -4,18 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean:reports":"rm -R -f cypress/reports && mkdir cypress/reports && mkdir cupress/reports/mochareports",
+    "clean:reports":"rm -R -f cypress/reports && mkdir cypress/reports && mkdir cypress/reports/mochareports",
     "pretest": "npm run clean:reports",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run --reporter teamcity",
+    "cypress:run": "cypress run",
     "test": ".\\node_modules\\.bin\\cypress run --config pageLoadTimeout=100000",
     "runtests": "npm run test --",
     "combine-reports": "mochawesome-merge --reportDir cypress/reports/mocha > cypress/reports/mochareports/report.json",
     "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
-    "posttest": "npm run combine-reports && npm run generate-report",
-    "ci: serve": "ng build --prod && http-server dist -p 9090", 
-    "cypress:ci": "start-server-and- prueba ci: serve http://localhost:9090 cypress:run"
-    
+    "posttest": "npm run combine-reports && npm run generate-report"
+        
   },
   "author": "Mariela",
   "license": "ISC",
