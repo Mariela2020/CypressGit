@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-03-16T21:43:41.114Z",
-    "end": "2021-03-16T21:44:37.778Z",
-    "duration": 56664,
+    "start": "2021-03-17T16:31:12.249Z",
+    "end": "2021-03-17T16:31:39.452Z",
+    "duration": 27203,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4af62536-735b-4af4-8d7a-330204ea6257",
+      "uuid": "940475bb-965b-4249-8890-2ce850b472ba",
       "title": "",
       "fullFile": "cypress\\integration\\test_planes.js",
       "file": "cypress\\integration\\test_planes.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "88c62fb8-619d-4169-897b-d719ffbcb9ca",
+          "uuid": "e54fd611-8b43-4743-bf91-cfdd16571d80",
           "title": "Tests Planes",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Flujo Planes",
               "fullTitle": "Tests Planes Flujo Planes",
               "timedOut": null,
-              "duration": 49038,
+              "duration": 24606,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('https://ww2.toctoc.com/gestioncorredor/');\ncy.title().should('eq', 'TOCTOC.com - Gestión corredor - Planes de publicación');\ncy.get('.gCdesktop > :nth-child(2) > a').click();\ncy.get('.inicia > .col-12 > .plan-btn > .btn').click({\n  force: true\n});\ncy.get('#nombreUser').type(this.data.name);\ncy.get('#telefonoUser').type(this.data.phone);\ncy.get('#emailUser').type(this.data.email);\ncy.get('#password').type(this.data.password);\ncy.get('#nextStep').click();\ncy.get('#razonSocial').type(this.data.razonsocial);\ncy.get('#rutFacturacion').clear().type(this.data.rut);\ncy.get('#nombreFantasia').type(this.data.fantasia);\ncy.get('#giro').type(this.data.giro);\ncy.get('#telefono').type(this.data.phone);\ncy.get('#nextStep').click();\ncy.get('#representanteLegal').type(this.data.name);\ncy.get('#rutRepresentanteLegal').clear().type(this.data.rut);\ncy.get('#emailFacturacion').type(this.data.email_facturacion);\ncy.get('#direccionFacturacion').type(this.data.direccion);\ncy.get('#region').select('13');\ncy.get('#comuna').select('339');\ncy.get('#aceptaTerminos').click();\ncy.get('.btn-danger').click();\ncy.wait(3000);\ncy.get('#verDetalle').click();\ncy.get('div.pago__Productos__Extra__detalle.contenedor-padre:nth-child(4) section.flujo__pago div.container.detallePago div.row.detalle__datos:nth-child(5) div.btn-next.col-12 a.btn.btn-danger.button.btn-block > span:nth-child(1)').click();\ncy.get('.modal-footer > .btn').click();",
               "err": {},
-              "uuid": "b23a2abd-cb0b-4507-a08a-9cf2c2ef096c",
-              "parentUUID": "88c62fb8-619d-4169-897b-d719ffbcb9ca",
+              "uuid": "4ba40e29-a7c5-4fb7-84a6-2790211175ec",
+              "parentUUID": "e54fd611-8b43-4743-bf91-cfdd16571d80",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b23a2abd-cb0b-4507-a08a-9cf2c2ef096c"
+            "4ba40e29-a7c5-4fb7-84a6-2790211175ec"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 49038,
+          "duration": 24606,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -83,7 +83,7 @@
     "mochawesome": {
       "options": {
         "quiet": false,
-        "reportFilename": "mochawesome",
+        "reportFilename": "report",
         "saveHtml": true,
         "saveJson": true,
         "consoleReporter": "spec",
@@ -94,16 +94,13 @@
     },
     "marge": {
       "options": {
-        "reporterEnabled": "mochawesome",
-        "mochawesomeReporteOptions": {
-          "reportDir": "cypress/reports/mocha",
-          "reportFilename": "report",
-          "quite": true,
-          "overwrite": false,
-          "html": true,
-          "json": true,
-          "charts": true
-        }
+        "reportDir": "cypress/reports/mocha",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true,
+        "timestamp": "mmddyyyy_HHMMss"
       },
       "version": "5.1.0"
     }
