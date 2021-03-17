@@ -5,14 +5,13 @@
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
-    "test": "cypress run",
-    "combine-reports":"mochawesome-merge cypress/reports/*.json > cypress/reports/output.json",
-    "generate-report": "marge cypress/reports/output.json --reportDir ./ --inline"     
+    "test": "cypress run"
   },
   "author": "Mariela",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^6.1.0",
+    "cypress-file-upload": "^5.0.2",
     "cypress-multi-reporters": "^1.4.0",
     "mocha": "^8.2.1",
     "mochawesome": "^6.2.1",
