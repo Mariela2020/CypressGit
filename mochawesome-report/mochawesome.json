@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-03-17T20:06:21.322Z",
-    "end": "2021-03-17T20:06:48.569Z",
-    "duration": 27247,
+    "start": "2021-03-17T21:12:08.265Z",
+    "end": "2021-03-17T21:12:35.579Z",
+    "duration": 27314,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "65a6be38-6244-4de3-87a6-36eabcbb2028",
+      "uuid": "b30893ba-080c-4376-864b-13b6e6ca86c4",
       "title": "",
       "fullFile": "cypress\\integration\\test_planes.js",
       "file": "cypress\\integration\\test_planes.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "23c0935d-97ec-42d5-b815-f180385ecb82",
+          "uuid": "f780c536-9922-499c-8557-ffa302c3b57b",
           "title": "Tests Planes",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Flujo Planes",
               "fullTitle": "Tests Planes Flujo Planes",
               "timedOut": null,
-              "duration": 24454,
+              "duration": 24340,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('https://ww2.toctoc.com/gestioncorredor/');\ncy.title().should('eq', 'TOCTOC.com - Gestión corredor - Planes de publicación');\ncy.get('.gCdesktop > :nth-child(2) > a').click();\ncy.get('.inicia > .col-12 > .plan-btn > .btn').click({\n  force: true\n});\ncy.get('#nombreUser').type(this.data.name);\ncy.get('#telefonoUser').type(this.data.phone);\ncy.get('#emailUser').type(this.data.email);\ncy.get('#password').type(this.data.password);\ncy.get('#nextStep').click();\ncy.get('#razonSocial').type(this.data.razonsocial);\ncy.get('#rutFacturacion').clear().type(this.data.rut);\ncy.get('#nombreFantasia').type(this.data.fantasia);\ncy.get('#giro').type(this.data.giro);\ncy.get('#telefono').type(this.data.phone);\ncy.get('#nextStep').click();\ncy.get('#representanteLegal').type(this.data.name);\ncy.get('#rutRepresentanteLegal').clear().type(this.data.rut);\ncy.get('#emailFacturacion').type(this.data.email_facturacion);\ncy.get('#direccionFacturacion').type(this.data.direccion);\ncy.get('#region').select('13');\ncy.get('#comuna').select('339');\ncy.get('#aceptaTerminos').click();\ncy.get('.btn-danger').click();\ncy.wait(3000);\ncy.get('#verDetalle').click();\ncy.get('div.pago__Productos__Extra__detalle.contenedor-padre:nth-child(4) section.flujo__pago div.container.detallePago div.row.detalle__datos:nth-child(5) div.btn-next.col-12 a.btn.btn-danger.button.btn-block > span:nth-child(1)').click();\ncy.get('.modal-footer > .btn').click();",
               "err": {},
-              "uuid": "73d5a585-a531-4a5e-b7f0-e00c5f72ef70",
-              "parentUUID": "23c0935d-97ec-42d5-b815-f180385ecb82",
+              "uuid": "8b6c43e0-93de-4148-a921-6b9477ac201a",
+              "parentUUID": "f780c536-9922-499c-8557-ffa302c3b57b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "73d5a585-a531-4a5e-b7f0-e00c5f72ef70"
+            "8b6c43e0-93de-4148-a921-6b9477ac201a"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 24454,
+          "duration": 24340,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
