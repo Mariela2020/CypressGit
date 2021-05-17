@@ -15,3 +15,9 @@ Producto: Plan Crece;  17-5-2021
 Precio del producto:  $59.120;  17-5-2021
 IVA: $11.233;  17-5-2021
 Total Detalle del producto: $70.353;  17-5-2021
+
+Total Resumen: $  70.353 CLP;  17-5-2021
+Producto: Plan Crece;  17-5-2021
+Precio del producto:  $59.120;  17-5-2021
+IVA: $11.233;  17-5-2021
+Total Detalle del producto: $70.353;  17-5-2021

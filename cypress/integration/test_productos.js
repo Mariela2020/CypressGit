@@ -7,7 +7,7 @@ const d = new Date
     d.getMinutes(),
     d.getSeconds()].join(':')
 
-describe('Tests Suites', function() {
+describe('Test Producto', function() {
   
     before(function(){
        cy.fixture('data').then(function(data){

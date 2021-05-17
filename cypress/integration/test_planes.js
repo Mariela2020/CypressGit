@@ -7,7 +7,7 @@ const d = new Date
     d.getMinutes(),
     d.getSeconds()].join(':')
     
-describe('Tests Planes', function() 
+describe('Test Planes', function() 
 {
 
   before(function(){
