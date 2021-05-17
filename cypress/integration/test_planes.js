@@ -1,3 +1,12 @@
+const d = new Date
+  const date = [d.getDate(),
+    d.getMonth() + 1,
+    d.getFullYear()].join('-') 
+
+  const hora = [d.getHours(),
+    d.getMinutes(),
+    d.getSeconds()].join(':')
+    
 describe('Tests Planes', function() 
 {
 
@@ -13,7 +22,7 @@ describe('Tests Planes', function()
       cy.visit('https://ww2.toctoc.com/gestioncorredor/')
       cy.title().should('eq','TOCTOC.com - Gestión corredor - Planes de publicación')
       cy.get('.gCdesktop > :nth-child(2) > a').click()
-      cy.get('.inicia > .col-12 > .plan-btn > .btn').click({force:true})
+      cy.get('.crece > .col-12 > .plan-btn > .btn').click({force:true})
       cy.get('#nombreUser').type(this.data.name)
       cy.get('#telefonoUser').type(this.data.phone)
       cy.get('#emailUser').type(this.data.email)
@@ -35,38 +44,52 @@ describe('Tests Planes', function()
       cy.get('.btn-danger').click()
       cy.wait(3000)
       cy.get('#verDetalle').click()
+      
+      cy.get(':nth-child(2) > span.total').then(function($valorelem){
+        const totalrestxt= $valorelem.text()
+        cy.log(totalrestxt)       
+        cy.writeFile('fichero.txt', '\n\nTotal Resumen: ' +totalrestxt + ';  ' + date, {flag: 'a+'} )
+                  
+      })
+      
+      //cy.screenshot()
       cy.get('div.pago__Productos__Extra__detalle.contenedor-padre:nth-child(4) section.flujo__pago div.container.detallePago div.row.detalle__datos:nth-child(5) div.btn-next.col-12 a.btn.btn-danger.button.btn-block > span:nth-child(1)').click()
       cy.get('.modal-footer > .btn').click()
+         
+      cy.get('.col-md-8 > :nth-child(2)').then(function($valorelem){
+        
+        const productotxt= $valorelem.text()
+        cy.log(productotxt)       
+        cy.writeFile('fichero.txt', '\nProducto: ' +productotxt + ';  ' + date, {flag: 'a+'} )
+                  
+      })
 
+      cy.get('.body-process > :nth-child(2) > .row > .col-md-4 > .title-c').then(function($valorelem){
+        
+        const preciotxt= $valorelem.text()
+        cy.log(preciotxt)
+        cy.writeFile('fichero.txt', '\nPrecio del producto: ' +preciotxt + ';  ' + date, {flag: 'a+'} )
+                  
+      })
+      
+      cy.get(':nth-child(3) > .col-sm-12 > .title-c').then(function($valorelem){
+        
+          const ivatxt= $valorelem.text()
+          cy.log(ivatxt)             
+          cy.writeFile('fichero.txt', '\n'+ivatxt + ';  ' + date, {flag: 'a+'} )
+                      
+      })  
+
+      cy.get('.total > strong').then(function($valorelem){
+        
+        const totaldetxt= $valorelem.text()
+        cy.log(totaldetxt)
+        cy.writeFile('fichero.txt', '\nTotal Detalle del producto: ' +totaldetxt + ';  ' + date, {flag: 'a+'} )
+      
+      })  
+       
+  })
      
       
-    })
+})
   
-
-  /*  it('Flujo Producto Marketing',function ()  
-  {
-      cy.visit('https://ww2.toctoc.com/gestioncorredor/')
-      cy.title().should('eq','TOCTOC.com - Gestión corredor - Planes de publicación')
-      cy.get("div.menuPrincipal:nth-child(2) div.menuGestionCorredores:nth-child(3) div.container div.menu__interno.d-flex.flex-row ul.gCdesktop.menu__section--list.d-flex.flex-row li.item:nth-child(3) > a:nth-child(1)").click()
-      cy.get('.gCdesktop > :nth-child(3) > a').click()
-      cy.get(':nth-child(1) > .item_superior > .desktop').click()
-      cy.get('.modal-footer > :nth-child(2) > .btn').click()
-      
-      cy.wait(6000)
-      
-      //cy.get('#razonSocial').clear().type('Prueba de Flujo QA')
-      //cy.get('#rutFacturacion').clear().type('267008469')
-      //cy.get('#nombreFantasia').clear().type('Test de Prueba')
-      //cy.get('#giro').clear().type('Giro3')
-      //cy.get('#telefono').clear().type('+56993947209')
-      //cy.get('#direccion').clear().type('Bella Vista')
-      //cy.get('#nextStep').click()
-
-
-      
-      
-    }) */
-
-
-  
-  })
