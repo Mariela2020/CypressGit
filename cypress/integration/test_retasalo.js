@@ -46,7 +46,8 @@ describe('Test Retasalo', function()
     {
       
      // cy.get('.comreg').should('be.visible').and('contain', 'Santiago 235-15')
-      cy.get('.dir').should('be.visible').and('contain', 'ROSAS N°3024,') 
+      //cy.get('.dir').should('be.visible').and('contain', 'ROSAS N°3024,') 
+      cy.get('.dir').should('be.visible')
       cy.get(':nth-child(1) > .accordion-feat').should('be.visible')
       cy.get(':nth-child(2) > .accordion-feat').should('be.visible')
       cy.get(':nth-child(3) > .accordion-feat').should('be.visible')
