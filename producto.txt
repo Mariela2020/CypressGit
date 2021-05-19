@@ -43,3 +43,9 @@ Producto: Espacio landing (unidad);  19-5-2021
 Precio:  $59.135;  19-5-2021
 IVA: $11.236;  19-5-2021
 Total: $70.371;  19-5-2021
+
+Total Resumen: $  70.371 CLP;  19-5-2021
+Producto: Espacio landing (unidad);  19-5-2021
+Precio:  $59.135;  19-5-2021
+IVA: $11.236;  19-5-2021
+Total: $70.371;  19-5-2021
