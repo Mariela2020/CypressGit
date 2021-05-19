@@ -11,7 +11,7 @@
   "author": "Mariela",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^6.1.0",
+    "cypress": "^7.0.0",
     "cypress-file-upload": "^5.0.2",
     "cypress-multi-reporters": "^1.4.0",
     "mocha": "^8.2.1",
