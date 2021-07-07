@@ -1,5 +1,15 @@
 {
   "chromeWebSecurity": false,
   "video": false,
-  "projectId": "48u1t7"
+  "projectId": "48u1t7",
+
+  
+  "reporter": "mochawesome",
+  "reporterOptions": {
+      "reportDir": "cypress/results",
+      "overwrite": true,
+      "html": false,
+      "json": true
+    }
+  
 }

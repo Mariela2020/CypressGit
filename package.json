@@ -6,7 +6,9 @@
   "scripts": {
     "cypress:open": "cypress open",
     "test": "cypress run",
-    "cy:run:dashboard": "cypress run --record --key 901cb235-2a46-4519-b146-8998d73b29ab"
+    "cy:run:dashboard": "cypress run --record --key 901cb235-2a46-4519-b146-8998d73b29ab",
+    "cy:run": "cypress run --spec 'cypress/integration/test_API_UF.js' --reporter mochawesome",
+    "save:results": "node ./utils/extract_data.js"
   },
   "author": "Mariela",
   "license": "ISC",
@@ -18,5 +20,10 @@
     "mochawesome": "^6.2.1",
     "mochawesome-merge": "^4.2.0",
     "mochawesome-report-generator": "^5.1.0"
+  },
+  "dependencies": {
+    "jsonpath": "^1.1.1",
+    "mysql": "^2.18.1",
+    "npm": "^6.14.5"
   }
 }
